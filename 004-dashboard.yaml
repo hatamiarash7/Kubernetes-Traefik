@@ -28,6 +28,5 @@ spec:
     - match: Host(`traefik2.k8s`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
       kind: Rule
       services:
-        - name: traefik
-          port: 8100
+        - name: api@internal
           kind: TraefikService
