@@ -1,2 +1,3 @@
-# Kubernetes-Traefik
- Deploy Traefik 2 in Kubernetes cluster - Ingress controller
+# Kubernetes Traefik
+
+ Deploy Traefik 2.2 in Kubernetes cluster as Ingress controller
