@@ -13,7 +13,7 @@ spec:
       - path: /dashboard
         backend:
           serviceName: traefik
-          servicePort: 8080
+          servicePort: 8100
 
 ---
 apiVersion: traefik.containo.us/v1alpha1
@@ -29,5 +29,5 @@ spec:
       kind: Rule
       services:
         - name: traefik
-          port: 8080
+          port: 8100
           kind: TraefikService
