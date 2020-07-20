@@ -1,0 +1,15 @@
+kind: Ingress
+apiVersion: networking.k8s.io/v1beta1
+metadata:
+  name: traefik
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web, websecure
+spec:
+  rules:
+  - host: traefik.k8s
+    http:
+      paths:
+      - path: /dashboard
+        backend:
+          serviceName: traefik
+          servicePort: 8080
